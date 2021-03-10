@@ -11,7 +11,7 @@ export const uploadPhoto = (formData, history) => async dispatch => {
       }
     };
 
-    const res = await axios.post('/api/photo', formData, config);
+    const res = await axios.post(process.env.API_URL + '/api/photo', formData, config);
 
     dispatch({
       type: GET_PHOTO,
@@ -30,7 +30,7 @@ export const uploadPhoto = (formData, history) => async dispatch => {
 
 export const getCurrentUserPhotos = () => async dispatch => {
   try {
-    const res = await axios.get('/api/photo/me');
+    const res = await axios.get(process.env.API_URL + '/api/photo/me');
 
     dispatch({
       type: GET_ALL_PHOTOS,

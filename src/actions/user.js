@@ -6,7 +6,7 @@ import { GET_PROFILE, PROFILE_ERROR, GET_SEARCH, SEARCH_ERROR } from './types';
 // Get current user's profile
 export const getCurrentProfile = () => async dispatch => {
   try {
-    const res = await axios.get('/api/users/me');
+    const res = await axios.get(process.env.API_URL + '/api/users/me');
 
     dispatch({
       type: GET_PROFILE,
@@ -29,7 +29,7 @@ export const createProfile = (formData, history, edit = false) => async dispatch
       }
     };
 
-    const res = await axios.post('api/users/me', formData, config);
+    const res = await axios.post(process.env.API_URL + 'api/users/me', formData, config);
 
     dispatch({
       type: GET_PROFILE,
@@ -64,7 +64,7 @@ export const createUserService = (formData, history, edit = false) => async disp
       }
     };
 
-    const res = await axios.post('api/users/me/services', formData, config);
+    const res = await axios.post(process.env.API_URL + 'api/users/me/services', formData, config);
 
     dispatch({
       type: GET_PROFILE,
@@ -93,7 +93,7 @@ export const createUserService = (formData, history, edit = false) => async disp
 // Search for users based on search term
 export const searchForUsers = (searchTerm) => async dispatch => {
   try {
-    const res = await axios.get('/api/users/search/' + searchTerm);
+    const res = await axios.get(process.env.API_URL + '/api/users/search/' + searchTerm);
 
     dispatch({
       type: GET_SEARCH,

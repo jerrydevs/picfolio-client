@@ -6,7 +6,7 @@ import { GET_VIEW_PROFILE, PROFILE_ERROR } from './types';
 // Get current user's profile
 export const getViewProfile = (username) => async dispatch => {
   try {
-    const res = await axios.get(`/api/users/profile/${username}`, {username});
+    const res = await axios.get(process.env.API_URL + `/api/users/profile/${username}`, {username});
     
     dispatch({
       type: GET_VIEW_PROFILE,
