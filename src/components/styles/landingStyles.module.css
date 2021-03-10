@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+.first_page {
+   background-image: linear-gradient(to bottom right, rgba(117,42,120), rgba(32,129,165)), url("/bg_repeat.png");;
+    width: 100vw;
+    height: 92vh;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+
+.main_title {
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 50px;
+    line-height: 1;
+    text-align: left;
+    padding-left: 18vw;
+    margin-top: 27vh;
+    width: 50vw;
+    display: inline-flex;
+  }
+
+.subtitle {
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+    padding-left: 18vw;
+    margin-top: 4vh;
+    width: 40vw;
+    display: block;
+    font-weight: 1;
+  }
+
+.exampleImageContainer {
+  display: inline-block;
+  position: absolute;
+  margin-right: 0;
+  padding-left: 5vw;
+  margin-top: 24vh;
+}
+
+.shadow {-webkit-filter: drop-shadow(8px 8px 10px rgb(63, 0, 71));filter: drop-shadow(8px 8px 10px rgb(63, 0, 71));}
+
+.body_container {
+  background-image: url("/bg_repeat.png");
+  background-size: 500px 400px;
+  background-repeat: repeat-x repeat-y;
+  height:inherit;
+}
+
+.image_container {
+  height: 350px;
+  width: 350px;
+  overflow: auto;
+  display: inline-block;
+}
+
+.display_image {
+  padding: 10px 10px 10px 10px;
+  width: 350px;
+  height: 350px;
+  object-fit: scale-down;
+}

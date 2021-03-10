@@ -1,0 +1,134 @@
+.profile_info {
+    position: fixed;
+    width: 23%;
+    display: flex;
+    float: left;
+    align-content: center;
+    align-items: center;
+    padding: 0% 1% 0 3%;
+    background-color: #fafafa;
+    height: 100%;
+  }
+  
+  .photo_display {
+    background-color: #ffff;
+    width: 77%;
+    display: inline-block;
+    margin-left: 23%;
+    margin-right: 0;
+    height: 92vh;
+  }
+  
+  .icon {
+    width: auto;
+    height: 25px;
+  }
+  
+  .social_links {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .name_display {
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    height: 50px;
+    font-size: 50px;
+  }
+  
+  .loc_display {
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: lowercase;
+    font-size: 18px;
+    height: 25px;
+  }
+  
+  .username_display {
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: lowercase;
+    font-size: 20px;
+    height: 15px;
+  }
+  
+  .location_display {
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: lowercase;
+    font-size: 20px;
+  }
+  
+  .bio_container {
+    padding: 30px 5px;
+  }
+  
+  .bio {
+    color: rgb(43, 42, 42);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+  }
+  
+  .service_name {
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    height: 20px;
+    font-size: 20px;
+    display: inline-block;
+  }
+  
+  .service_description {
+    color: rgb(43, 42, 42);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    height: 10px;
+  }
+  
+  .service_price {
+    color: rgb(37, 1, 94);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+.profile_image {
+    width: 80px;
+    height: auto;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body_container {
+    background-image: url("/bg_repeat.png");
+    background-size: 500px 400px;
+    background-repeat: repeat-x repeat-y;
+    height:inherit;
+  }
+  
+  .image_container {
+    height: 350px;
+    width: 350px;
+    overflow: auto;
+    display: inline-block;
+  }
+  
+  .display_image {
+    padding: 10px 10px 10px 10px;
+    width: 350px;
+    height: 350px;
+    object-fit: scale-down;
+  }
+
+  .cardStyle {
+    display: inline-block;
+    margin-left: 2vw;
+    width: 100vw;
+    padding: 10px 0;
+    }

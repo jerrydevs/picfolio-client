@@ -1,0 +1,28 @@
+.foot {
+    background-color: #f8f9fa;
+    margin-left: auto;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    list-style-type: none !important;
+    height: 8vh;
+    bottom: 0 !important;
+}
+
+.copyright {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 10pt;
+    vertical-align: middle;
+    margin-left: 15px;
+    color: gray !important;
+}
+
+.linkList {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 9pt;
+    padding-bottom: 5px;
+    vertical-align: middle;
+}
